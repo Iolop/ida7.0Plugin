@@ -372,7 +372,7 @@ class MIPSROPFinder(object):
 
         for xref in idautils.XrefsTo(idc.LocByName('system')):
             ea = xref.frm
-            if ea >= start_ea and ea <= end_ea and idc.GetMnem(ea)[0] in ['j', 'b']:
+            if ea >= start_ea and ea <= end_ea and idc.GetMnem(ea) != '' and idc.GetMnem(ea)[0] in ['j', 'b']:
                 a0_ea = self._find_next_instruction_ea(ea+self.INSIZE, stack_arg_zero, ea+self.INSIZE)
                 if a0_ea == idc.BADADDR:
                     a0_ea = self._find_prev_instruction_ea(ea, stack_arg_zero, ea-(self.SEARCH_DEPTH*self.INSIZE))
