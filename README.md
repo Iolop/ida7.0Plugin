@@ -6,6 +6,6 @@ I don't know too much about the idaapi,but if your plugin has issue when loading
 
 For more api info: Please read these articles
 
-[ ] http://www.hexblog.com/?p=886
+1.http://www.hexblog.com/?p=886
 
-[ ] https://www.hex-rays.com/products/ida/support/sdkdoc/kernwin_8hpp.html
+2.https://www.hex-rays.com/products/ida/support/sdkdoc/kernwin_8hpp.html
